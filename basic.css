@@ -14,7 +14,7 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background: var(--clr);
+    background: black;
 }
 
 .nav {
@@ -59,16 +59,16 @@ body {
     font-size: 2em; /* Increased icon size */
     text-align: center;
     transition: 0.5s;
-    color: var(--clr);
+    color: black;
 }
 
 .nav ul li.active a .icon {
-    transform: translateY(-40px);
+    transform: translateY(-41px);
 }
 
 .nav ul li a .text {
     position: absolute;
-    color: var(--clr);
+    color: black;
     font-weight: 500;
     font-size: 1em; /* Increased font size */
     letter-spacing: 0.05em;
@@ -112,25 +112,3 @@ body {
 .nav ul li:nth-child(5).active ~ .ind {
     transform: translateX(calc(90px * 4));
 }
-
-.ind::before {
-    content: '';
-    position: absolute;
-    top: 50%;
-    left: -22%;
-    width: 20%;
-    height: 20px;
-    background: transparent;
-    border-top-right-radius: 20px;
-}
-
-.ind::after {
-    content: '';
-    position: absolute;
-    top: 50%;
-    right: -22%;
-    width: 20%;
-    height: 20px;
-    background: transparent;
-    border-top-left-radius: 20px;
-} 
